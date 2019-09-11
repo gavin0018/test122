@@ -1,0 +1,168 @@
+@charset "utf-8";
+ 
+/**
+ * FileName: base.css
+ * Version: v2.0.1
+ * Description: CSS Reset & Public Components
+ * 该文件样式已经定义完毕，在做修改前先告知  QQ：1315367377 王剑
+ */
+
+/* reset */
+body{width: 100%;overflow-x: hidden;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,keygen,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,input,textarea,select,button{margin:0;padding:0;border:0;outline:0;font-size:100%;}
+html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+body,html{font-family:"Microsoft YaHei";}
+ol,ul,li{list-style:none;}
+sup,sub{font-size:83%}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+del{text-decoration:line-through}
+ins,u,s,a,a:hover{text-decoration:none}
+pre,code,kbd,samp{font-family:Microsoft YaHei}
+em,i,cite,var,address,dfn{font-style:normal}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+h1,h2,h3,h4,h5,h6{}
+html,body,fieldset,img,iframe,abbr{border:0}
+table{border-collapse:collapse;border-spacing:0}
+caption,th{text-align:left;font-weight:normal}
+textarea{overflow:auto;resize:none}
+label,summary{cursor:default}
+a,button,label{cursor:pointer}
+body,textarea,input,button,select,keygen,legend{color:#666}
+html{_background-image:url(about:blank);_background-attachment:fixed}
+body,html{background-color:#fff}
+img{ border: none;}
+a{color:#666;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+/*a:hover{color:#ff571a;}*/
+
+/* links */
+a.w:link,a.w:visited,a.w:active,.w{color:#FFFFFF;text-decoration:none;}
+a.w:hover {color:#F4F3F2;}
+a.b:link,a.b:visited,a.b:active{color:#225588;text-decoration:none;}
+a.b:hover {color:#FF6600;}
+a.g:link,a.g:visited,a.g:active{color:#666666;text-decoration:none;}
+a.g:hover {color:#FF6600;}
+
+/* function */
+.dn{display:none}
+.db{display:block}
+.di{display:inline}
+.di-b{ display: inline-block;}
+.f-fl{float:left;}
+.f-fr{float:right;}
+.fn{float:none}
+.pr{position:relative}
+.pa{position:absolute}
+.oh{overflow:hidden}
+.fs12{font-size:12px}
+.fs14{font-size:14px}
+.fwb{font-weight:bold}
+.tal{text-align:left}
+.tac{text-align:center}
+.tar{text-align:right}
+.vam{vertical-align:middle}
+.vat{vertical-align:top}
+.wsn{word-wrap:normal;white-space:nowrap}
+.ti{overflow:hidden;text-indent:-999em}
+.ti2{text-indent:2em}
+.cp{cursor:pointer}
+.nus{-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.clear,.cb{overflow:hidden;display:block;clear:both;height:0}
+.clearfix:before,.clearfix:after{content:'';display:table}
+.clearfix:after{clear:both}
+.clearfix,.zm{*zoom:1}
+
+.right{float: right;}
+.left{float: left;}
+
+
+/* edge */
+.mt0{margin-top:0}
+.mt5{margin-top:5px}
+.mt10{margin-top:10px}
+.mt15{margin-top:15px}
+.mt20{margin-top:20px}
+.mt30{margin-top:30px}
+.mr0{margin-right:0}
+.mr-3{margin-right:-3px}
+.mr5{margin-right:5px}
+.mr10{margin-right:10px}
+.mr15{margin-right:15px}
+.mr20{margin-right:20px}
+.mb0{margin-bottom:0}
+.mb5{margin-bottom:5px}
+.mb10{margin-bottom:10px}
+.mb15{margin-bottom:15px}
+.mb20{margin-bottom:20px}
+.ml0{margin-left:0}
+.ml-3{margin-left:-3px}
+.ml5{margin-left:5px}
+.ml10{margin-left:10px}
+.ml15{margin-left:15px}
+.ml20{margin-left:20px}
+.ml30{margin-left:30px}
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p20{padding:20px;}
+.pt0{padding-top:0}
+.pt10{padding-top:10px}
+.pt15{padding-top:15px}
+.pt20{padding-top:20px}
+.pr0{padding-right:0}
+.pr10{padding-right:10px}
+.pr15{padding-right:15px}
+.pr20{padding-right:20px}
+.pb0{padding-bottom:0}
+.pb10{padding-bottom:10px}
+.pb15{padding-bottom:15px}
+.pb20{padding-bottom:20px}
+.pl0{padding-left:0}
+.pl10{padding-left:10px}
+.pl15{padding-left:15px}
+.pl20{padding-left:20px}
+.h5{height:10px;font-size:1px;}
+.h10{height:10px;font-size:1px;}
+.h15{height:15px;font-size:1px;}
+.h20{height:20px;font-size:1px;}
+.center{ width: 1200px;margin: 0 auto;overflow: hidden;}
+/* ui */
+.ui-gray { -webkit-filter:grayscale(1); -ms-filter:grayscale(1); filter:grayscale(1); filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);}
+.ui-tine { display:inline-block; line-height:0; font-size:0; border:6px dashed transparent;}
+.ui-animate { -webkit-animation-duration:1s; -webkit-animation-fill-mode:both; animation-duration:1s; animation-fill-mode:both;}
+.ui-trans { -webkit-transition:all .3s ease-in; -ms-transition:all .3s ease-in; transition:all .3s ease-in;}
+.ui-selectxt::-webkit-selection { background-color:#ca061a; color:#fff;}
+.ui-selectxt::-ms-selection { background-color:#ca061a; color:#fff;}
+.ui-selectxt::selection { background-color:#ca061a; color:#fff;}
+
+/*内容页分页*/
+.page_list{padding: 5px 0;}
+.page_list p{ line-height: 26px; padding-left: 23px;}
+.page_list p a{color: #555;}
+.page_list p a:hover{color: #555;}
+
+/*二级页分页*/
+.pages{ padding:50px 0; text-align: center;}
+.pages ul{ display: inline-block;}
+.pages a{line-height: 27px;font-size: 14px;text-align:center;border:1px #dbdbdb solid;border-radius:3px}
+.pages a{ color: #4e4e4e; background:#fff; padding:4px 10px; line-height: 27px;}
+.pages a:hover,.pages a.current{ background:#e65450; color: #fff;border-radius:3px;border-color:#c5915f;}
+
+/*订购帮助分页*/
+.pages2{width:306px;float:left;}
+.pages2 a{width:136px;height:39px;border:1px #fd4343 solid;color:#fd4343;display:block;float:left;text-align:center;line-height:39px;margin-top:40px;margin-bottom:70px;}
+.pages2 a:hover{background:#fd4343;color:#fff;}
+.pages2 a:last-child{float:right;}
+.pages2 li:hover a,.pages2 li.current a{ color: #ea4045;}
+
+/*内容页分页*/
+.page_cont{padding:30px 0;position: relative;}
+.page_cont p{ line-height:24px;margin: 0;}
+.page_cont span{ top: 25px; right: 20px;}
+.page_cont .bdsharebuttonbox{display: inline-block;}
+.page_cont .bdsharebuttonbox{position: absolute; right: 0; top: 36px;}
+/*按钮*/
+.landing_but{width:88% !important;height:3.5rem !important;color:#fff;font-size:1.8rem !important;display:block;margin:0 auto;border-radius:3px;background:#9e4fc5;margin-left:auto !important;}
+.shop_sure{width:63%;background:#ff692c;color:#fff;}
+.shop_accou2{font-size:1.71rem !important;color:#fff !important;background:#f9340d;width:43%;text-align:left !important;text-indent:3.7rem}
